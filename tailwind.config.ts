@@ -24,6 +24,9 @@ const config: Config = {
 				grayText: {
 					DEFAULT: '#505050',
 				},
+				orangeText: {
+					DEFAULT: '#D64D00',
+				},
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {

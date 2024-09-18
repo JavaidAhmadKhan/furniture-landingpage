@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import { ThemeProvider } from "./components/theme-provider";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 const rubik = localFont({
   src: "./fonts/Rubik-Regular.ttf",
@@ -41,7 +41,7 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
