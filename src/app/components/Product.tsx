@@ -2,7 +2,13 @@ import React from "react";
 import ProductCard from "./ProductCard";
 // import { products } from "../../../utils/data";
 
-const Product = ({ title, heading, description }) => {
+type ProductProps = {
+  title: string;
+  heading: string;
+  description: string;
+};
+
+const Product = ({ title, heading, description }: ProductProps) => {
   return (
     <div className="text-center">
       <h1 className="text-orangeText  font-rubikMedium text-[18px] px-4 ">

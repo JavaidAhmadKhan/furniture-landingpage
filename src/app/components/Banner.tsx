@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-export default function Banner({ bannerImg }) {
+type BannerPorps = {
+  bannerImg: string;
+};
+export default function Banner({ bannerImg }: BannerPorps) {
   return (
     <div className="mt-[43px] md:mt-[76px] mb-[43px] md:mb-[76px] p-6">
       <Image

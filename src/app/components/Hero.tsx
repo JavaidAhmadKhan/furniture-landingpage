@@ -5,7 +5,11 @@ import stripImg from "../../images/strip.svg";
 import Banner from "./Banner";
 import Strip from "./Strip";
 
-export default function Hero({ title, description }) {
+type HeroProps = {
+  title: string;
+  description: string;
+};
+export default function Hero({ title, description }: HeroProps) {
   return (
     <>
       <div className="text-center pt-16 px-4 md:px-28 ">
@@ -17,7 +21,7 @@ export default function Hero({ title, description }) {
         </p>
       </div>
       <InputSearch />
-      <Banner bannerImg={bannerImg} />
+      <Banner bannerImg={bannerImg.src} />
       <Strip stripImg={stripImg} />
     </>
   );
