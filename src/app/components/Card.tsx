@@ -1,14 +1,12 @@
 import React from "react";
-import ProductCard from "./ProductCard";
-// import { products } from "../../../utils/data";
 
-type ProductProps = {
+type CardProps = {
   title: string;
   heading: string;
   description: string;
 };
 
-const Product = ({ title, heading, description }: ProductProps) => {
+const Card = ({ title, heading, description }: CardProps) => {
   return (
     <div className="text-center">
       <h1 className="text-orangeText  font-rubikMedium text-[18px] px-4 ">
@@ -20,9 +18,8 @@ const Product = ({ title, heading, description }: ProductProps) => {
       <p className="text-grayText dark:text-white text-[20px] pt-6 px-4">
         {description}
       </p>
-      <ProductCard />
     </div>
   );
 };
 
-export default Product;
+export default Card;

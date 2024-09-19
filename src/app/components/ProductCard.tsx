@@ -1,7 +1,7 @@
 import React from "react";
-import { products } from "../../../utils/data.js";
+import { products } from "../../lib/data";
 import Image from "next/image.js";
-import { Button } from "@/components/ui/button";
+import PopupButton from "./PopupButton";
 export default function ProductCard() {
   return (
     <>
@@ -16,9 +16,7 @@ export default function ProductCard() {
                 width={300}
                 height={271}
               />
-              <Button className="mt-6 p-7 dark:text-white text-lg font-rubikMedium w-full">
-                Enquire Now
-              </Button>
+              <PopupButton />
               <div className="text-left">
                 <h1 className="mt-4 text-[20px] font-rubik text-grayText">
                   {product.name}

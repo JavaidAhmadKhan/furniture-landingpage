@@ -9,11 +9,11 @@ export default function InputSearch() {
       <div className="bg-[#F5F5F5] flex items-center justify-center py-1 px-3 rounded-md">
         <Search color="#A8A8A8" />
         <input
-          className="py-3 px-6 bg-[#F5F5F5] outline-none"
+          className="py-3 bg-[#F5F5F5] outline-none"
           type="text"
           placeholder="Search your furnitures..."
         />
-        <Button>Search</Button>
+        <Button className="text-white p-5">Search</Button>
       </div>
     </form>
   );

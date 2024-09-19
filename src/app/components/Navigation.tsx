@@ -1,6 +1,6 @@
 import React from "react";
 
-import { navbar } from "../../../utils/data.js";
+import { navbar } from "../../lib/data.js";
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 

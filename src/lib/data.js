@@ -1,11 +1,11 @@
-import prodcutimg from '../src/images/prodcuct1.jpg'
-import prodcutimg2 from '../src/images/prodcuct2.jpg'
-import prodcutimg3 from '../src/images/prodcuct3.jpg'
-import prodcutimg4 from '../src/images/prodcuct4.jpg'
-import prodcutimg5 from '../src/images/prodcuct5.jpg'
-import prodcutimg6 from '../src/images/prodcuct6.jpg'
-import prodcutimg7 from '../src/images/prodcuct7.jpg'
-import prodcutimg8 from '../src/images/prodcuct8.jpg'
+import prodcutimg from '../images/prodcuct1.jpg'
+import prodcutimg2 from '../images/prodcuct2.jpg'
+import prodcutimg3 from '../images/prodcuct3.jpg'
+import prodcutimg4 from '../images/prodcuct4.jpg'
+import prodcutimg5 from '../images/prodcuct5.jpg'
+import prodcutimg6 from '../images/prodcuct6.jpg'
+import prodcutimg7 from '../images/prodcuct7.jpg'
+import prodcutimg8 from '../images/prodcuct8.jpg'
 
 export const navbar = [
     {

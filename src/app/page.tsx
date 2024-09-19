@@ -1,5 +1,7 @@
 import Hero from "./components/Hero";
-import Product from "./components/Product";
+import ProductCard from "./components/ProductCard";
+import Card from "./components/Card";
+import { InfiniteMovingCardsDemo } from "./components/InfiniteMovingCardsDemo";
 
 export default function Home() {
   return (
@@ -9,12 +11,21 @@ export default function Home() {
         description=" Lorem Ipsum is simply dummy text of the printing and typesetting
         industry."
       />
-      <Product
+      <Card
         title="Check Our Product"
         heading="Crafted with excellent material"
         description=" Lorem Ipsum is simply dummy text of the printing and typesetting
         industry."
       />
+      <ProductCard />
+      <div className="mt-[66px]">
+        <Card
+          title="Testimonial Section"
+          heading="What Our Customer Say"
+          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        />
+      </div>
+      <InfiniteMovingCardsDemo />
     </div>
   );
 }

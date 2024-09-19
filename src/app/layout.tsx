@@ -17,7 +17,7 @@ const rubikMedium = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Furniture",
+  title: "Furnique",
   description: "We desgin best furnished to the world",
 };
 
