@@ -1,12 +1,15 @@
+import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-export const BentoGrid = ({
-  className,
-  children,
-}: {
+interface BentoGridProps {
   className?: string;
   children?: React.ReactNode;
+}
+
+export const BentoGrid: React.FC<BentoGridProps> = ({
+  className,
+  children,
 }) => {
   return (
     <div
@@ -20,14 +23,16 @@ export const BentoGrid = ({
   );
 };
 
-export const BentoGridItem = ({
-  className,
-  img,
-  alt = "Image",
-}: {
+interface BentoGridItemProps {
   className?: string;
   img: string;
   alt?: string;
+}
+
+export const BentoGridItem: React.FC<BentoGridItemProps> = ({
+  className,
+  img,
+  alt = "Image",
 }) => {
   return (
     <div
