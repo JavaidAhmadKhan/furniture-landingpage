@@ -6,6 +6,8 @@ import ImgGallery1 from "../../images/gallery1.png";
 import ImgGallery2 from "../../images/gallery2.png";
 import ImgGallery3 from "../../images/gallery3.png";
 import ImgGallery4 from "../../images/gallery4.png";
+import ImgGallery5 from "../../images/gallery5.png";
+import ImgGallery6 from "../../images/gallery6.png";
 
 interface GalleryItem {
   title: string;
@@ -24,7 +26,7 @@ const items: GalleryItem[] = [
   {
     title: "The Dawn of Innovation",
     description: "Explore the birth of groundbreaking ideas and inventions.",
-    className: "md:col-span-2",
+    className: "md:col-span-1",
     img: ImgGallery1.src,
   },
   {
@@ -36,7 +38,7 @@ const items: GalleryItem[] = [
   {
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
-    className: "md:col-span-1",
+    className: "md:col-span-2",
     img: ImgGallery3.src,
   },
   {
@@ -46,11 +48,25 @@ const items: GalleryItem[] = [
     className: "md:col-span-2",
     img: ImgGallery4.src,
   },
+  {
+    title: "The Power of Communication",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    className: "md:col-span-1",
+    img: ImgGallery5.src,
+  },
+  {
+    title: "The Power of Communication",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    className: "md:col-span-1",
+    img: ImgGallery6.src,
+  },
 ];
 
 export function FurnitureGallery(): JSX.Element {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -63,7 +79,7 @@ export function FurnitureGallery(): JSX.Element {
               alt={item.title}
               width={400}
               height={300}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer"
             />
           }
         />
