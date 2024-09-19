@@ -38,11 +38,11 @@ const testimonials = [
   {
     quote:
       "I recently purchased furniture from this website, and I couldn't be happier with my experience. The quality of the furniture is outstanding, and it arrived exactly as described. The customer service was top-notch, with prompt and helpful responses to all my inquiries. I highly recommend this website for anyone looking to buy furniture for their home.",
-    name: "Johny Assloy",
+    name: "Jack Assloy",
   },
   {
     quote:
       "Shopping for furniture has never been easier! I stumbled upon this website and decided to give it a try. From browsing the extensive catalog to placing my order, the process was smooth and seamless. The website's intuitive interface made it simple to find the perfect pieces for my home. The furniture arrived on time, well-packaged, and in excellent condition. I'm thrilled with my purchase and will definitely be a returning customer.",
-    name: "Sarah H",
+    name: "Sarah Hustan",
   },
 ];

@@ -25,7 +25,7 @@ const config: Config = {
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				blackText: {
-					DEFAULT: '#121212',
+					DEFAULT: "#121b2e",
 				},
 				grayText: {
 					DEFAULT: '#505050',

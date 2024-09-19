@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 import { ThemeProvider } from "./components/theme-provider";
 import Footer from "./components/Footer";
+import ScrollButton from "./components/ScrollButton";
 
 const rubik = localFont({
   src: "./fonts/Rubik-Regular.ttf",
@@ -41,6 +42,7 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
+          <ScrollButton />
           <Footer />
         </ThemeProvider>
       </body>

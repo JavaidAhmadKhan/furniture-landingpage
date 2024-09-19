@@ -13,7 +13,10 @@ export default function Navigation() {
       <div className=" items-center justify-end gap-4 md:gap-12 hidden md:flex">
         {navbar.map((item) => (
           <div key={item.id}>
-            <Link className="font-rubik text-[20px]" href={item.link}>
+            <Link
+              className="font-rubik text-[20px] text-blackText"
+              href={item.link}
+            >
               {item.name}
             </Link>
           </div>

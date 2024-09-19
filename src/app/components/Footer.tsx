@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="bg-gray-100">
+    <footer className="bg-gray-100 dark:bg-blackText">
       <div className="mx-auto w-full space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-4">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -12,7 +12,7 @@ function Footer() {
                 Furnique
               </h1>
             </Link>
-            <p className="mt-4 max-w-xs text-gray-500">
+            <p className="mt-4 max-w-xs text-gray-500 dark:text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
               cupiditate quae nam molestias.
             </p>
@@ -23,7 +23,7 @@ function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 text-base transition hover:opacity-75"
+                  className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                 >
                   <span className="sr-only">Facebook</span>
 
@@ -47,7 +47,7 @@ function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 text-base transition hover:opacity-75"
+                  className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                 >
                   <span className="sr-only">Instagram</span>
 
@@ -71,7 +71,7 @@ function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 text-base transition hover:opacity-75"
+                  className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                 >
                   <span className="sr-only">Twitter</span>
 
@@ -90,7 +90,7 @@ function Footer() {
                   href="https://www.linkedin.com/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 text-base transition hover:opacity-75"
+                  className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                 >
                   <span className="sr-only">Linkedin</span>
 
@@ -110,7 +110,7 @@ function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 text-base transition hover:opacity-75"
+                  className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                 >
                   <span className="sr-only">GitHub</span>
 
@@ -134,7 +134,7 @@ function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 text-base transition hover:opacity-75"
+                  className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                 >
                   <span className="sr-only">Dribbble</span>
 
@@ -163,7 +163,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700  text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white  text-base transition hover:opacity-75"
                   >
                     {" "}
                     Visit Us
@@ -173,7 +173,7 @@ function Footer() {
                 <li>
                   <Link
                     href={"/about-us"}
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     About us
@@ -183,7 +183,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     Our staff
@@ -193,7 +193,7 @@ function Footer() {
                 {/* <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     HR Consulting{" "}
@@ -203,7 +203,7 @@ function Footer() {
                 {/* <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     SEO Optimisation{" "}
@@ -219,7 +219,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     Privacy Policy
@@ -229,7 +229,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     My Account
@@ -239,7 +239,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     FAQ
@@ -248,7 +248,7 @@ function Footer() {
                 <li>
                   <Link
                     href={"/contact-us"}
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     Contact us
@@ -264,7 +264,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     furnique@gmail.com
@@ -274,7 +274,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     +91-878-785-23
@@ -284,7 +284,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     512 Main St, El City, Bangalore 145782, Karnataka, India
@@ -300,7 +300,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     Accessibility{" "}
@@ -310,7 +310,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     Returns Policy{" "}
@@ -320,7 +320,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     Refund Policy{" "}
@@ -330,7 +330,7 @@ function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-700 text-base transition hover:opacity-75"
+                    className="text-gray-700 dark:text-white text-base transition hover:opacity-75"
                   >
                     {" "}
                     Hiring Statistics{" "}
@@ -341,7 +341,7 @@ function Footer() {
           </div>
         </div>
 
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-500 dark:text-white">
           &copy; 2022. Furnique. All rights reserved.
         </p>
       </div>
