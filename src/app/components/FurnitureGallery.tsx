@@ -15,7 +15,9 @@ interface GalleryItem {
 }
 
 const Skeleton: React.FC = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black">
+    <Skeleton />
+  </div>
 );
 
 const items: GalleryItem[] = [
@@ -48,7 +50,7 @@ const items: GalleryItem[] = [
 
 export function FurnitureGallery(): JSX.Element {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] cursor-pointer">
+    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
