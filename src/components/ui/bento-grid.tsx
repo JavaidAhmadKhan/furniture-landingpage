@@ -23,11 +23,11 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   img,
+  alt = "Image",
 }: {
   className?: string;
-  header?: React.ReactNode;
-  img?: string | React.ReactNode;
-  src?: string | React.ReactNode;
+  img: string;
+  alt?: string;
 }) => {
   return (
     <div
@@ -40,7 +40,7 @@ export const BentoGridItem = ({
         <Image
           className="w-full h-[290px] object-cover rounded-md"
           src={img}
-          alt="gallery"
+          alt={alt}
           width={200}
           height={200}
         />
