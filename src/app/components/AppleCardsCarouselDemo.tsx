@@ -6,10 +6,9 @@ import Slider1 from "../../images/slider1.png";
 import Slider2 from "../../images/slider2.png";
 import Slider3 from "../../images/slider3.png";
 import Slider4 from "../../images/slider4.png";
-import { StaticImageData } from "next/image";
 
 interface CardData {
-  src: StaticImageData;
+  src: string;
 }
 
 // Card data array
