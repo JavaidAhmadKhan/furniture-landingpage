@@ -36,7 +36,7 @@ const data: CardData[] = [
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
-    <Card key={card.src.src} card={card} index={index} layout={true} />
+    <Card key={card.src} card={card} index={index} layout={true} />
   ));
 
   return (
