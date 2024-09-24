@@ -7,9 +7,8 @@ import Slider2 from "../../images/slider2.png";
 import Slider3 from "../../images/slider3.png";
 import Slider4 from "../../images/slider4.png";
 
-// Define the type for the card data
 interface CardData {
-  src: StaticImageData; // Assuming you are using next/image or a similar setup with StaticImageData type
+  src: string | StaticImageData;
 }
 
 // Card data array
