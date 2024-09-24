@@ -7,22 +7,13 @@ import Slider2 from "../../images/slider2.png";
 import Slider3 from "../../images/slider3.png";
 import Slider4 from "../../images/slider4.png";
 
-type AppleCards = {
-  src: string | StaticImageData;
-};
-export function AppleCardsCarouselDemo({}: AppleCards) {
-  const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} layout={true} />
-  ));
-
-  return (
-    <div className="w-full h-full py-20">
-      <Carousel items={cards} />
-    </div>
-  );
+// Define the type for the card data
+interface CardData {
+  src: StaticImageData; // Assuming you are using next/image or a similar setup with StaticImageData type
 }
 
-const data = [
+// Card data array
+const data: CardData[] = [
   {
     src: Slider1,
   },
@@ -32,15 +23,25 @@ const data = [
   {
     src: Slider3,
   },
-
   {
     src: Slider4,
   },
   {
     src: Slider2,
   },
-
   {
     src: Slider1,
   },
 ];
+
+export function AppleCardsCarouselDemo() {
+  const cards = data.map((card, index) => (
+    <Card key={card.src.src} card={card} index={index} layout={true} />
+  ));
+
+  return (
+    <div className="w-full h-full py-20">
+      <Carousel items={cards} />
+    </div>
+  );
+}
