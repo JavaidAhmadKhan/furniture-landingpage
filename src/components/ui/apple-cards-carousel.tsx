@@ -196,7 +196,7 @@ export const Card = ({
 
   return (
     <>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {open && (
           <div className="fixed inset-0 h-screen z-50 overflow-auto">
             <motion.div
@@ -235,7 +235,7 @@ export const Card = ({
             </motion.div>
           </div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
