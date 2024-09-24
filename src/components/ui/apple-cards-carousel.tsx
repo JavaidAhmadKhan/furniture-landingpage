@@ -206,7 +206,6 @@ export const BlurImage = ({
   src,
   className,
   alt,
-
   ...rest
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
@@ -218,7 +217,7 @@ export const BlurImage = ({
         className
       )}
       onLoad={() => setLoading(false)}
-      src={src}
+      src={src.toString()}
       width={width}
       height={height}
       loading="lazy"

@@ -15,28 +15,28 @@ interface CardData {
 // Card data array
 const data: CardData[] = [
   {
-    src: Slider1,
+    src: Slider1.src,
   },
   {
-    src: Slider2,
+    src: Slider2.src,
   },
   {
-    src: Slider3,
+    src: Slider3.src,
   },
   {
-    src: Slider4,
+    src: Slider4.src,
   },
   {
-    src: Slider2,
+    src: Slider2.src,
   },
   {
-    src: Slider1,
+    src: Slider1.src,
   },
 ];
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} layout={true} />
+    <Card key={card.src.src} card={card} index={index} layout={true} />
   ));
 
   return (
