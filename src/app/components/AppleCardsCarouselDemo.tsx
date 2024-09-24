@@ -9,7 +9,7 @@ import Slider4 from "../../images/slider4.png";
 import { StaticImageData } from "next/image";
 
 interface CardData {
-  src: string | StaticImageData;
+  src: StaticImageData;
 }
 
 // Card data array
