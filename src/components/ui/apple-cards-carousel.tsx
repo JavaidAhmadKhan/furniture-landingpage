@@ -95,12 +95,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             )}
           ></div>
 
-          <div
-            className={cn(
-              "flex flex-row justify-start gap-4 pl-4",
-              "max-w-7xl mx-auto" // remove max-w-4xl if you want the carousel to span the full width of its container
-            )}
-          >
+          <div className={cn("flex flex-row justify-start gap-4 pl-4", "mx-4")}>
             {items.map((item, index) => (
               <motion.div
                 initial={{
@@ -153,7 +148,6 @@ export const Card = ({
   card: Card;
   index: number;
   src: string | StaticImageData;
-  layout?: boolean;
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -174,7 +168,7 @@ export const Card = ({
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
+  }, []);
 
   useOutsideClick(containerRef, () => handleClose());
 
@@ -197,7 +191,7 @@ export const Card = ({
 
         <BlurImage
           src={card.src}
-          alt={"slider"}
+          alt="slider"
           fill
           className="object-cover absolute z-10 inset-0"
         />
@@ -212,6 +206,7 @@ export const BlurImage = ({
   src,
   className,
   alt,
+
   ...rest
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
