@@ -152,6 +152,7 @@ export const Card = ({
 }: {
   card: Card;
   index: number;
+  src: string;
   layout?: boolean;
 }) => {
   const [open, setOpen] = useState(false);
