@@ -9,7 +9,7 @@ import React, {
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps, StaticImageData } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 interface CarouselProps {
@@ -18,7 +18,7 @@ interface CarouselProps {
 }
 
 type Card = {
-  src: string;
+  src: string | StaticImageData;
 };
 
 export const CarouselContext = createContext<{
@@ -152,7 +152,7 @@ export const Card = ({
 }: {
   card: Card;
   index: number;
-  src: string;
+  src: string | StaticImageData;
   layout?: boolean;
 }) => {
   const [open, setOpen] = useState(false);
