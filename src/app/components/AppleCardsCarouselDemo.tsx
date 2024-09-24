@@ -7,7 +7,10 @@ import Slider2 from "../../images/slider2.png";
 import Slider3 from "../../images/slider3.png";
 import Slider4 from "../../images/slider4.png";
 
-export function AppleCardsCarouselDemo() {
+type AppleCards = {
+  src: string | StaticImageData;
+};
+export function AppleCardsCarouselDemo({}: AppleCards) {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} layout={true} />
   ));
