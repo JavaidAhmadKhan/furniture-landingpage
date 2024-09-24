@@ -70,8 +70,6 @@ export function FurnitureGallery(): JSX.Element {
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
-          // title={item.title}
-          // description={item.description}
           className={item.className}
           header={
             <Image

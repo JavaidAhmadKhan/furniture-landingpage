@@ -14,7 +14,7 @@ export default function Navigation() {
         {navbar.map((item) => (
           <div key={item.id}>
             <Link
-              className="font-rubik text-[20px] text-blackText"
+              className="font-rubik text-[20px] text-blackText dark:text-white"
               href={item.link}
             >
               {item.name}

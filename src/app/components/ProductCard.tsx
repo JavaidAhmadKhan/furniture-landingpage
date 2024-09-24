@@ -5,7 +5,7 @@ import PopupButton from "./PopupButton";
 export default function ProductCard() {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 mt-[80px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 mt-[80px]">
         {products &&
           products.map((product, id) => (
             <div
