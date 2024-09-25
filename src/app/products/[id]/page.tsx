@@ -1,7 +1,7 @@
-export default function page({ params: { id } }: string) {
+export default function page() {
   return (
     <div className="p-6 text-center">
-      <h1>Product Id:{id}</h1>
+      <h1>Product Id</h1>
     </div>
   );
 }
