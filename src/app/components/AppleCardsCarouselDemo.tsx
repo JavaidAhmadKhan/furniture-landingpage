@@ -16,22 +16,28 @@ export function AppleCardsCarouselDemo() {
 
 const data = [
   {
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129805.jpg",
   },
   {
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://img.freepik.com/premium-photo/photo-modern-living-room-sofa-interior-furniture-design-with-wall-frames_763111-170233.jpg",
   },
   {
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://img.freepik.com/premium-photo/living-room-with-grey-wall-brown-sofa-coffee-table-with-round-coffee-table_900321-4460.jpg",
   },
 
   {
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://img.freepik.com/premium-photo/cozy-home-interior-sofa-cushions-floor-lamp_888962-167.jpg",
   },
   {
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://img.freepik.com/premium-photo/cozy-creative-composition-stylish-living-room-interior-design-with-frame-green-sofa-wooden-furniture-plants-accessories-white-walls-parquet-floor_431307-2090.jpg",
   },
   {
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://img.freepik.com/premium-photo/living-room-with-couch-picture-plant_1089151-181343.jpg",
+  },
+  {
+    src: "https://img.freepik.com/premium-photo/living-room-with-couch-table-with-plant-it_855221-8101.jpg",
+  },
+  {
+    src: "https://www.bananahome.com.au/cdn/shop/articles/Grey_Living_Room_Ideas.jpg?format=pjpg&v=1674710175&width=1320",
   },
 ];
