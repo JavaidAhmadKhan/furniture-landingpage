@@ -2,13 +2,15 @@ import React from "react";
 import { products } from "../../lib/data";
 import Image from "next/image.js";
 import PopupButton from "./PopupButton";
+import Link from "next/link";
 export default function ProductCard() {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 mt-[80px]">
         {products &&
           products.map((product, id) => (
-            <div
+            <Link
+              href={`/products/${product.id}`}
               className="border rounded-md p-8 bg-gray-200 dark:bg-blackText"
               key={id}
             >
@@ -28,7 +30,7 @@ export default function ProductCard() {
                   ₹ {product.price}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
       </div>
     </>
