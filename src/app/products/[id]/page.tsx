@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function ProductDetails({ params: { id } }) {
   return (
     <div className="p-6 text-center">
