@@ -1,38 +1,49 @@
-import React from "react";
-import { products } from "../../lib/data";
-import Image from "next/image.js";
-import PopupButton from "./PopupButton";
+import Image from "next/image";
 import Link from "next/link";
-export default function ProductCard() {
-  return (
-    <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 mt-[80px]">
-        {products &&
-          products.map((product, id) => (
-            <Link
-              href={`/products/${product.id}`}
-              className="border rounded-md p-8 bg-gray-200 dark:bg-blackText"
-              key={id}
-            >
-              <Image
-                className="w-full h-auto aspect-square object-cover rounded-md transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer"
-                src={product.img}
-                alt={product.name}
-                width={300}
-                height={271}
-              />
-              <PopupButton />
-              <div className="text-left">
-                <h1 className="mt-4 dark:text-white text-[20px] font-rubik text-grayText">
-                  {product.name}
-                </h1>
-                <p className="text-[18px] dark:text-white text-blackText font-rubikMedium">
-                  ₹ {product.price}
-                </p>
-              </div>
-            </Link>
-          ))}
-      </div>
-    </>
-  );
+
+interface CardProps {
+  id: number;
+  name: string;
+  // description: string;
+  price: number;
+  imageUrl: string;
 }
+
+const ProductCard: React.FC<CardProps> = ({
+  id,
+  name,
+  // description,
+  price,
+  imageUrl,
+}) => {
+  return (
+    <Link href={`/products/${id}`}>
+      <div className="max-w-lg bg-gray-953 overflow-hidden h-full gap-6 flex flex-col justify-between transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 shadow-lg p-4 border rounded-md  bg-gray-200 dark:bg-blackText">
+        <div className="">
+          <div className="relative h-[20rem] bg-center ">
+            <Image
+              src={imageUrl}
+              alt={name}
+              fill={true}
+              className="rounded-md"
+              sizes="100vw"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
+          <div className="text-left">
+            <h1 className="mt-4 dark:text-white text-[20px] font-rubik text-grayText">
+              {name}
+            </h1>
+          </div>
+        </div>
+        <p className="text-[18px] dark:text-white text-blackText font-rubikMedium">
+          ₹ {price}
+        </p>
+      </div>
+    </Link>
+  );
+};
+
+export default ProductCard;

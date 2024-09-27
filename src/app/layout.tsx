@@ -33,7 +33,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${rubik.variable} ${rubikMedium.variable}`}
     >
-      <body>
+      <body className="bg-[#f4eee5] dark:bg-blackText">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
