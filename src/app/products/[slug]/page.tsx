@@ -62,10 +62,10 @@ export default function Page({ params }: Props) {
       </div>
       <div className="pt-6">
         <label className="font-bold pb-2 border-b-2 decoration-dotted border-dashed border-gray-800 border-opacity-15">
-          📝 NAME:
+          📝 DESCRIPTION:
         </label>
         <p className="text-gray-600 dark:text-white text-lg my-4 pt-4 pb-6 ">
-          {product.name}
+          {product.description}
         </p>
       </div>
     </div>

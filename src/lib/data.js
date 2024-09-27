@@ -35,47 +35,55 @@ export const products = [
         imageUrl: prodcutimg,
         name: 'Lifestyle Green Chair',
         price: 4599,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     },
     {
         id: '2',
         imageUrl: prodcutimg2,
         name: 'Modern Cupboard',
         price: 3699,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     },
     {
         id: '3',
         imageUrl: prodcutimg3,
         name: 'Fabric Chair',
         price: 5679,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     },
     {
         id: '4',
         imageUrl: prodcutimg4,
         name: 'White Armchair',
-        price: 3498
+        price: 3498,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     },
     {
         id: '5',
         imageUrl: prodcutimg5,
         name: 'Brown Sofa',
-        price: 3498
+        price: 3498,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     },
     {
         id: '6',
         imageUrl: prodcutimg6,
         name: 'Wooden Chair',
-        price: 3498
+        price: 3498,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     },
     {
         id: '7',
         imageUrl: prodcutimg7,
         name: 'Modern Lamp',
-        price: 3498
+        price: 3498,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     },
     {
         id: '8',
         imageUrl: prodcutimg8,
         name: 'Comfy Springbed',
-        price: 3498
+        price: 3498,
+        description: 'A stylish and comfortable green chair perfect for living room.'
     }
 ]

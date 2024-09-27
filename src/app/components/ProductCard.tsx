@@ -4,7 +4,7 @@ import Link from "next/link";
 interface CardProps {
   id: number;
   name: string;
-  // description: string;
+  description: string;
   price: number;
   imageUrl: string;
 }
@@ -12,7 +12,7 @@ interface CardProps {
 const ProductCard: React.FC<CardProps> = ({
   id,
   name,
-  // description,
+  description,
   price,
   imageUrl,
 }) => {
@@ -36,6 +36,9 @@ const ProductCard: React.FC<CardProps> = ({
             <h1 className="mt-4 dark:text-white text-[20px] font-rubik text-grayText">
               {name}
             </h1>
+            <p className="text-grayText dark:text-white  font-rubikMedium text-base truncate">
+              {description}
+            </p>
           </div>
         </div>
         <p className="text-[18px] dark:text-white text-blackText font-rubikMedium">
