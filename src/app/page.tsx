@@ -28,7 +28,7 @@ export default function Home() {
                   <ProductCard
                     key={`${product.name}-${idx}`}
                     {...product}
-                    imageUrl={product.imageUrl}
+                    imageUrl={product.imageUrl.src}
                   />
                 ))}
               </div>
