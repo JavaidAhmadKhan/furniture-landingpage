@@ -38,7 +38,7 @@ export default function Page({ params }: Props) {
 
   return (
     <div className="px-4 py-12 max-w-7xl mx-auto min-h-screen">
-      <div className="flex justify-between mb-6 lg:mb-12">
+      <div className="flex items-center justify-between mb-6 lg:mb-12">
         <h2 className="text-3xl font-rubikMedium lg:text-4xl items-start uppercase">
           {product.name}
         </h2>
@@ -57,23 +57,23 @@ export default function Page({ params }: Props) {
             src={product.imageUrl.src}
           />
         </div>
-        <div className="bg-[#E9E4DB] p-6 w-full">
-          <label className="font-rubikMedium">💰 PRICE:</label>
-          <p className="text-gray-800 text-2xl lg:text-3xl pt-4 py-6 text-center border-b-2 decoration-dotted border-dashed border-gray-800 border-opacity-15 font-rubikMedium">
+        <div className="bg-[#E9E4DB] dark:bg-blackText p-6 w-full flex items-center justify-between lg:block">
+          <label className="font-rubikMedium dark:text-white">💰 PRICE:</label>
+          <p className="text-gray-800 dark:text-white text-2xl lg:text-3xl pt-4 py-6 text-center border-b-2 decoration-dotted border-dashed border-gray-800 border-opacity-15 font-rubikMedium">
             ₹{product.price}
           </p>
-          <div className=" text-white px-4 py-2 rounded-md flex lg:hidden w-full items-center justify-center my-12">
-            <PopupButton />
-          </div>
         </div>
       </div>
       <div className="pt-6">
-        <label className="font-bold pb-2 font-rubikMedium border-b-2 decoration-dotted border-dashed border-gray-800 border-opacity-15">
+        <label className="font-bold pb-2 font-rubikMedium border-b-2 decoration-dotted border-dashed  dark:text-white border-gray-800 border-opacity-15">
           📝 DESCRIPTION:
         </label>
-        <p className="text-gray-600 text-lg my-4 pt-4 pb-6 rubik ">
+        <p className="text-gray-600 dark:text-white text-lg my-4 pt-4 pb-6 rubik ">
           {product.description}
         </p>
+        <div className=" text-white px-4  rounded-md flex lg:hidden w-full items-center justify-center">
+          <PopupButton />
+        </div>
       </div>
     </div>
   );
