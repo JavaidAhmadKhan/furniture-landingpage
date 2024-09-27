@@ -6,7 +6,7 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function Navigation() {
   return (
-    <nav className="p-6 flex items-center justify-between border-b shadow-sm">
+    <nav className="px-4 py-6 flex items-center justify-between border-b shadow-sm">
       <Link href="/">
         <h1 className="font-rubikMedium text-2xl text-primary">Furnique</h1>
       </Link>

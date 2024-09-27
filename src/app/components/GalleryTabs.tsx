@@ -8,7 +8,7 @@ export default function GalleryTabs() {
       <Tabs
         defaultValue="all"
         className="flex flex-col
-       items-center justify-centermax-w-7xl max-auto"
+       items-center justify-center max-w-[100rem] max-auto"
       >
         <TabsList className="mb-[40px] h-12">
           <TabsTrigger value="all">All</TabsTrigger>

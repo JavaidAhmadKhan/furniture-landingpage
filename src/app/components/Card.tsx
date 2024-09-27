@@ -15,7 +15,7 @@ const Card = ({ title, heading, description }: CardProps) => {
       <h2 className="text-blackText dark:text-white font-rubikMedium text-[20px] md:text-[46px] px-4">
         {heading}
       </h2>
-      <p className="text-grayText dark:text-white text-[14px] md:text-[20px] pt-6 px-4">
+      <p className="text-grayText dark:text-white text-[14px] md:text-[20px] pt-6 px-4 mx-6 lg:mx-80">
         {description}
       </p>
     </div>

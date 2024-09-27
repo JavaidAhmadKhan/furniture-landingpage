@@ -10,18 +10,16 @@ export default function Home() {
     <>
       <div className="mb-16">
         <Hero
-          title="Transform Your Space, Elevate Your Style."
-          description=" Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry."
+          title="Elegant Creations of Wooden Wonders"
+          description=" Elegant Creations specializes in crafting timeless, high-quality furniture that blends modern design with traditional craftsmanship. From chic sofas to luxurious dining sets, every piece is designed to enhance your living spaces with style and comfort. Tailor-made solutions for homes, offices, and commercial spaces"
         />
         <Card
           title="Check Our Product"
           heading="Crafted with excellent material"
-          description=" Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry."
+          description="Crafted Comfort is dedicated to creating functional and aesthetically pleasing furniture for every room. Our collection ranges from cozy home essentials to sleek office furnishings, all designed with sustainability and comfort in mind. Discover the perfect blend of elegance and practicality with us."
         />
         <main className="min-h-screen max-w-[100rem] mx-auto">
-          <div className="px-12 pt-12 pb-20">
+          <div className="px-6 pt-12 pb-20">
             {products && products.length > 0 ? (
               <div className="grid  grid-cols-1 sm:grid-cols-2 sm:grid md:grid-cols-3 lg:grid-cols-4 gap-10">
                 {products.map((product, idx) => (
@@ -39,7 +37,7 @@ export default function Home() {
             )}
           </div>
         </main>
-        <div className="mt-[66px]">
+        <div className="mt-[66px] mb-12">
           <Card
             title="Testimonial Section"
             heading="What Our Customer Say"
